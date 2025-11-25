@@ -24,7 +24,7 @@ int balanced(string expr)
             char top = s.top();
             s.pop();
 
-            if ((character == ')' && top != '(') || (character == '{' && top != '}') || (character == ']' && top != ']'))
+            if ((character == '(' && top != ')') || (character == '{' && top != '}') || (character == '[' && top != ']'))
             {
 
                 return false;
